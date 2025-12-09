@@ -81,7 +81,7 @@ const AuthForm = () => {
 
   return (
     <>
-      <div className="mt-[90px] mb-[60px] w-[75%] rounded-[20px] max-w-[750px] m-auto shadow-all-over px-[100px] py-[50px]">
+      <div className="mt-[90px] w-[75%] rounded-[20px] max-w-[750px] m-auto shadow-all-over px-[100px] py-[50px]">
         <h1 className="text-center text-3xl">{isLogin ? "Sign In" : "Register"}</h1>
         {statusMessage && <p className="">{statusMessage}</p>}
         <form onSubmit={handleSubmit} className="">
