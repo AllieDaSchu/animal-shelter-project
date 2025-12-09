@@ -7,6 +7,16 @@ import {useState} from "react"
 
 const InterestForm = ({animal}) => {
     const {name} = useForm({initialData: animal})
+    const [submitted, setSubmitted] = useState(false)
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        setSubmitted(true)
+
+        setTimeout(() => {
+            setSubmitted(false);
+        }, 5000)
+    }
 
     return (
         <>
@@ -41,6 +51,9 @@ const InterestForm = ({animal}) => {
                             <textarea className="py-[5px] px-[7px] w-[100%] h-[100px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" name="message" id="message" placeholder="Add Message" required />
                         </div>
                         <button type="submit" id="submit" className="w-[100%] bg-driftwood-500 rounded-full py-[3px] text-sisal-50 hover:bg-driftwood-700 transition-bg duration-200 ease-in-out cursor-pointer">Send Message</button>
+                        {submitted && (
+                            <p className="text-center">Interest message has been sent!</p>
+                        )}
                     </form>
                 </div>
             </div>
