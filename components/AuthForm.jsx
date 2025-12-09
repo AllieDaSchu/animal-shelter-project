@@ -113,12 +113,12 @@ const AuthForm = () => {
             </div>
             
         </form>
-        <div className="">
+        {/* <div className="">
             <p>{isLogin ? "Don't have an account?" : "Already have an account?"}</p>
             <button type="button" onClick={handleToggle}>
             {isLogin ? "Register" : "Sign In"}
             </button>
-        </div>
+        </div> */}
       </div>
     </>
   );

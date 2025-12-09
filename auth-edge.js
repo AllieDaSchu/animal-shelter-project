@@ -10,8 +10,8 @@ export const { auth } = NextAuth({
       const isLoggedIn = auth && auth.user;
       const path = nextUrl.pathname;
       const isProtectedRoute =
-        path.startsWith("/add-profile") ||
-        (path.startsWith("/profile/") && path.endsWith("/edit"));
+        path.startsWith("/owner/addAnimal") ||
+        (path.startsWith("/animals/") && path.endsWith("/edit"));
       if (isProtectedRoute && !isLoggedIn) {
         return false; // Redirect to sign-in page
       }
