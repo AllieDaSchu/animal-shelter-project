@@ -8,6 +8,7 @@ const InterestForm = ({animal}) => {
 
         const {name} = useForm({initialData: animal})
 
+        
     return (
         <>
             <div className="flex flex-col mb-[50px] md:flex-row max-w-[1100px] gap-[25px] m-auto mt-[100px] px-[25px] items-center">
