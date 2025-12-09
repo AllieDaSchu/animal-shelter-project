@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -5,22 +6,58 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  --color-sisal-50: #f8f6f4;
+  --color-sisal-100: #efebe5;
+  --color-sisal-200: #d9cfc1;
+  --color-sisal-300: #c9bba8;
+  --color-sisal-400: #b39b84;
+  --color-sisal-500: #a3856c;
+  --color-sisal-600: #967560;
+  --color-sisal-700: #7d6051;
+  --color-sisal-800: #675045;
+  --color-sisal-900: #54423a;
+  --color-sisal-950: #2c221e;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-driftwood-50: #f7f4ef;
+  --color-driftwood-100: #eae4d7;
+  --color-driftwood-200: #d7c9b1;
+  --color-driftwood-300: #c0a684;
+  --color-driftwood-400: #ad8962;
+  --color-driftwood-500: #a77e58;
+  --color-driftwood-600: #886146;
+  --color-driftwood-700: #6e4b3a;
+  --color-driftwood-800: #5d4036;
+  --color-driftwood-900: #513832;
+  --color-driftwood-950: #2e1d1a;
+
+  --shadow-all-over: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+  --shadow-inset: 0 -20px 10px -10px rgba(0, 0, 0, 0.25) inset;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.raleway-400 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-500 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.raleway-200 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
