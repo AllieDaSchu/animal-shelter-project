@@ -29,5 +29,8 @@
     "eslint-config-next": "16.0.7",
     "prisma": "6.19.0",
     "tailwindcss": "^4"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
