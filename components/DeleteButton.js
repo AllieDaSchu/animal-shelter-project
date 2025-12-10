@@ -17,9 +17,9 @@ export default function DeleteButton({id}) {
             })
             if (!response.ok) {
                 const errorData = await response.json();
-                throw new Error(errorData.error||"Faield to Delete animal")
+                throw new Error(errorData.error||"Failed to Delete animal")
             }
-            router.push("/")
+            router.push("/animals")
         } catch (error) {
             setError(error.message)
             setIsDeleting(false)

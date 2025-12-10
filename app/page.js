@@ -37,23 +37,23 @@ export default function Home() {
       <div className="w-[100%] h-[100%] pt-[70px]">
         <div className="flex flex-col justify-between px-[25px] items-center h-[100%] max-w-[1200px] m-auto">
           <h3 className="text-3xl text-driftwood-900 pb-[25px]">Check Out Our Socials!</h3>
-          <div className="text-4xl text-sisal-50 flex flex-row gap-[20px]">
-            <div className="border-driftwood-900 cursor-pointer border-5 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-15 h-15 flex items-center justify-center">
+          <div className="text-2xl sm:text-4xl text-sisal-50 flex flex-row gap-[20px]">
+            <div className="border-driftwood-900 cursor-pointer border-4 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-10 h-10 sm:w-15 sm:h-15 flex items-center justify-center">
               <FontAwesomeIcon icon={faInstagram} />
             </div>
-            <div className="border-driftwood-900 cursor-pointer border-5 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-15 h-15 flex items-center justify-center">
+            <div className="border-driftwood-900 cursor-pointer border-5 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-10 h-10 sm:w-15 sm:h-15 flex items-center justify-center">
               <FontAwesomeIcon icon={faFacebookF} />
             </div>
-            <div className="border-driftwood-900 cursor-pointer border-5 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-15 h-15 flex items-center justify-center">
+            <div className="border-driftwood-900 cursor-pointer border-5 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-10 h-10 sm:w-15 sm:h-15 flex items-center justify-center">
               <FontAwesomeIcon icon={faLinkedinIn} />
             </div>
-            <div className="border-driftwood-900 cursor-pointer border-5 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-15 h-15 flex items-center justify-center">
+            <div className="border-driftwood-900 cursor-pointer border-5 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-10 h-10 sm:w-15 sm:h-15 flex items-center justify-center">
               <FontAwesomeIcon icon={faYoutube} />
             </div>
-            <div className="border-driftwood-900 cursor-pointer border-5 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-15 h-15 flex items-center justify-center">
+            <div className="border-driftwood-900 cursor-pointer border-5 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-10 h-10 sm:w-15 sm:h-15 flex items-center justify-center">
               <FontAwesomeIcon icon={faEnvelope} />
             </div>
-            <div className="border-driftwood-900 cursor-pointer border-5 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-15 h-15 flex items-center justify-center">
+            <div className="border-driftwood-900 cursor-pointer border-5 bg-driftwood-900 hover:bg-driftwood-900/0 hover:text-driftwood-900 transition-all duration-200 ease-in-out rounded-[10px] w-10 h-10 sm:w-15 sm:h-15 flex items-center justify-center">
               <FontAwesomeIcon icon={faXTwitter} />
             </div>
           </div>

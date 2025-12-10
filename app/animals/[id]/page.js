@@ -29,11 +29,11 @@ export default async function generateAnimal({params}) {
                     <Link className="underline" href="/animals">&lt; Back to Other Animals</Link>
                 </div>
                 <div className="rounded-[15px] max-w-[1000px] m-auto w-[100%] mb-[50px] shadow-all-over">
-                    <div className="flex flex-row p-[50px]">
-                        <div className="w-[40%] flex items-center">
-                            <img className="rounded-[20px] shadow-all-over" srcSet={animal.image_url} />
+                    <div className="flex flex-col md:flex-row p-[50px]">
+                        <div className="relative w-[100%] md:w-[40%] h-[200px] sm:h-[300px] rounded-[20px] flex overflow-hidden items-center shadow-all-over ">
+                            <img className="absolute inset-0 w-full h-full object-cover" srcSet={animal.image_url} />
                         </div>
-                        <div className="w-[60%] p-[50px] flex flex-col justify-center">
+                        <div className="w-[100%] md:w-[60%] pt-[30px] md:p-[50px] flex flex-col items-center md:items-start justify-center">
                             <h1 className="text-4xl mb-[1rem]">{animal.name}</h1>
                             <p className="text-xl mb-[.5rem]">{animal.breed}</p>
                             <p className="mb-[1rem]">{animal.age} - {animal.gender} - {animal.size}</p>
