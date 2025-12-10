@@ -12,14 +12,14 @@ export default function Home() {
     <div className="">
       <div id="banner" className="flex shadow-inset justify-center items-center h-[500px] before:content-[''] before:bg-black before:w-[100%] before:h-[500px] before:opacity-45 before:absolute bg-cover bg-center" style={{backgroundImage: 'url(../images/animal-shelter-banner.jpg)'}}>
         <div className="text-center text-sisal-100 z-900 mt-[60px] text-shadow-lg">
-          <h1 className="text-6xl pb-[15px]">Happy Paws Animal Shelter</h1>
+          <h1 className="text-6xl pb-[15px] raleway-500">Happy Paws Animal Shelter</h1>
           <h2 className="text-2xl pb-[10px]">Where animals find their fur-ever home</h2>
           <Link className="" href="/animals"><button className="inline-flex text-lg items-center justify-center bg-driftwood-500 rounded-full py-[5px] px-[10px] hover:scale-105 hover:bg-driftwood-700 transform-gpu transition-all duration-200 ease-in-out cursor-pointer">See Availability</button></Link>
         </div>
       </div>
       <div className="flex flex-col md:flex-row gap-[25px] max-w-[1200px] m-auto my-[40px] px-[25px] items-center">
         <div className="w-[100%] md:w-[60%] flex justify-center flex-col">
-          <h2 className="text-3xl mb-[15px] text-driftwood-900">About Us</h2>
+          <h2 className="text-3xl mb-[15px] text-driftwood-900 raleway-500">About Us</h2>
           <p>
             Happy Paws is an animal shelter that helps both cats and dogs in need. Our mission is to provide compassionate care, safe shelter, and medical support to animals in need while working tirelessly to place them in loving, permanent homes. We are committed to reducing pet overpopulation through spay/neuter initiatives, educating the community on responsible pet ownership, and fostering a culture of kindness and respect for all living beings. By building strong partnerships and engaging volunteers, we strive to create a world where every animal is valued and protected.
           </p>
