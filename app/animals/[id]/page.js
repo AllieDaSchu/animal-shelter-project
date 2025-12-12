@@ -26,7 +26,7 @@ export default async function generateAnimal({params}) {
         <>
             <div className="mt-[80px] px-[25px]">
                 <div className="max-w-[1000px] m-auto pb-[10px]">
-                    <Link className="relative palanquin-regular text-driftwood-700 before:absolute before:border-driftwood-900 before:border-t-2 before:w-[0px] hover:before:w-[100%] before:content-[''] before:h-[3px] before:bottom-0 before:left-0 before:transition-all ease-in-out duration-500" href="/animals">&lt; Back to Other Animals</Link>
+                    <Link className="relative palanquin-medium text-driftwood-700 before:absolute before:border-driftwood-900 before:border-t-2 before:w-[0px] hover:before:w-[100%] before:content-[''] before:h-[3px] before:bottom-0 before:left-0 before:transition-all ease-in-out duration-500" href="/animals">&lt; Back to Other Animals</Link>
                 </div>
                 <div className="rounded-[15px] max-w-[1000px] m-auto w-[100%] mb-[50px] shadow-all-over">
                     <div className="flex flex-col md:flex-row p-[50px]">
