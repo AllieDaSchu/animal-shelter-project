@@ -27,45 +27,45 @@ const AnimalForm = ({animal}) => {
     return (
         <div className="shadow-all-over rounded-[20px] max-w-[1200px] px-[25px] w-[80%] m-auto mt-[90px]">
             <form className="flex flex-col px-[20px] py-[10px]" onSubmit={handleSubmit}>
-                <h1 className="w-[100%] text-center text-4xl mb-[20px]">{animal?.id ? "Update Animal" : "Add an Animal"}</h1>
+                <h1 className="w-[100%] text-center text-4xl mb-[20px] ubuntu-regular">{animal?.id ? "Update Animal" : "Add an Animal"}</h1>
                 <div className="flex flex-col sm:flex-row gap-[20px] pb-[20px]">
                     <div className="flex flex-col w-[100%] sm:w-[33%]">
-                        <label className="block pb-[5px]" htmlFor="name">Name: </label>
-                        <input className="w-[100%] h-[30px] pl-[5px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" type="text" name="name" id="name" value={name} required onChange={onChange} />
+                        <label className="palanquin-regular block pb-[5px]" htmlFor="name">Name: </label>
+                        <input className="palanquin-regular w-[100%] h-[30px] pl-[5px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" type="text" name="name" id="name" value={name} required onChange={onChange} />
                     </div>
                     <div className="flex flex-col w-[100%] sm:w-[33%]">
-                        <label className="block pb-[5px]" htmlFor="type">Type: </label>
-                        <select className=" p-[2px] w-[100%] h-[30px] pl-[5px] cursor-pointer bg-gray-200 border-1 border-neutral-300 rounded-[7px]" name="type" value={type} onChange={onChange}>
+                        <label className="palanquin-regular block pb-[5px]" htmlFor="type">Type: </label>
+                        <select className="palanquin-regular w-[100%] h-[30px] pl-[5px] cursor-pointer bg-gray-200 border-1 border-neutral-300 rounded-[7px]" name="type" value={type} onChange={onChange}>
                             <option value="none">Select a Type...</option>
                             <option value="Dog">Dog</option>
                             <option value="Cat">Cat</option>
                         </select>
                     </div>
                     <div className="flex flex-col w-[100%] sm:w-[33%]">
-                        <label className="block pb-[5px]" htmlFor="gender">Gender: </label>
-                        <input className="w-[100%] h-[30px] pl-[5px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" type="text" name="gender" id="gender" value={gender} required onChange={onChange} />
+                        <label className="palanquin-regular block pb-[5px]" htmlFor="gender">Gender: </label>
+                        <input className="palanquin-regular w-[100%] h-[30px] pl-[5px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" type="text" name="gender" id="gender" value={gender} required onChange={onChange} />
                     </div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-[20px] pb-[20px] justify-between">
                     <div className="flex flex-col w-[100%] sm:w-[33%]">
-                        <label className="block pb-[5px]" htmlFor="breed">Breed: </label>
-                        <input className="w-[100%] h-[30px] pl-[5px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" type="text" name="breed" id="breed" value={breed} required onChange={onChange} />
+                        <label className="palanquin-regular block pb-[5px]" htmlFor="breed">Breed: </label>
+                        <input className="palanquin-regular w-[100%] h-[30px] pl-[5px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" type="text" name="breed" id="breed" value={breed} required onChange={onChange} />
                     </div>
                     <div className="flex flex-col w-[100%] sm:w-[33%]">
-                        <label className="block pb-[5px]" htmlFor="age">Age: </label>
-                        <input className="w-[100%] h-[30px] pl-[5px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" type="text" name="age" id="age" value={age} required onChange={onChange} />
+                        <label className="palanquin-regular block pb-[5px]" htmlFor="age">Age: </label>
+                        <input className="palanquin-regular w-[100%] h-[30px] pl-[5px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" type="text" name="age" id="age" value={age} required onChange={onChange} />
                     </div>
                     <div className="flex flex-col w-[100%] sm:w-[33%]">
-                        <label className="block pb-[5px]" htmlFor="size">Size: </label>
-                        <input className="w-[100%] h-[30px] pl-[5px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" type="text" name="size" id="size" value={size} required onChange={onChange} />
+                        <label className="palanquin-regular block pb-[5px]" htmlFor="size">Size: </label>
+                        <input className="palanquin-regular w-[100%] h-[30px] pl-[5px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" type="text" name="size" id="size" value={size} required onChange={onChange} />
                     </div>
                 </div>
                 <div className="flex flex-col sm:flex-row justify-between">
                     <div className="w-[100%] sm:w-[60%] md:w-[65%] lg:w-[75%]">
-                        <label className="block pb-[5px]" htmlFor="description">Description: </label>
-                        <textarea className="py-[5px] px-[7px] mb-[20px] w-[100%] h-[100px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" name="description" id="description" placeholder="Add Desc..." value={description} required onChange={onChange} />
+                        <label className="palanquin-regular block pb-[5px]" htmlFor="description">Description: </label>
+                        <textarea className="palanquin-regular py-[5px] px-[7px] mb-[20px] w-[100%] h-[100px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" name="description" id="description" placeholder="Add Desc..." value={description} required onChange={onChange} />
                     </div>
-                    <div className="flex w-[100%] sm:w-[35%] md:w-[30%] lg:w-[20%] justify-center items-center">
+                    <div className="palanquin-medium flex w-[100%] sm:w-[35%] md:w-[30%] lg:w-[20%] justify-center items-center">
                         <label htmlFor="img" className="flex flex-row sm:flex-col shadow-sm p-[20px] rounded-[20px] items-center flex-col cursor-pointer">
                             <div className="border-2 border-neutral-400 rounded-full w-15 h-15 flex items-center justify-center">
                                 <FontAwesomeIcon className="text-neutral-400" icon={faArrowUpFromBracket} />
@@ -80,8 +80,8 @@ const AnimalForm = ({animal}) => {
                 </div>
                 
                 
-                {errors && <p className="errors">{errors}</p>}
-                <div className="w-[60%] m-auto">
+                {errors && <p className="errors palanquin-medium">{errors}</p>}
+                <div className="w-[60%] palanquin-medium m-auto">
                     <button id="submit" type="submit" className="w-[100%] bg-driftwood-500 rounded-full py-[3px] mt-[20px] text-sisal-50 hover:bg-driftwood-700 transition-bg duration-200 ease-in-out cursor-pointer"
                 disabled={
                         isSubmitting ||
@@ -98,7 +98,7 @@ const AnimalForm = ({animal}) => {
                 </button>
                 </div>
                 
-                {success && <p className="success">{success}</p>}
+                {success && <p className="palanquin-medium success">{success}</p>}
             </form>
         </div>
     )

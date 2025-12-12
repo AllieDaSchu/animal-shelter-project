@@ -14,8 +14,8 @@ const Footer = () => {
         <div className="bg-driftwood-800 mt-[70px] bottom-[0px] w-[100%] px-[10px]">
             <div className="max-w-[750px] m-auto flex flex-col items-center sm:flex-row sm:items-start text-sisal-100 gap-[20px] sm:gap-[5px] justify-between py-[40px]">
                 <div className="">
-                    <h3 className="text-2xl">Our Hours</h3>
-                    <div className="flex gap-[20px]">
+                    <h3 className="text-2xl ubuntu-regular">Our Hours</h3>
+                    <div className="flex gap-[20px] palanquin-medium">
                         <div>
                             <p>Monday</p>
                             <p>Tuesday</p>
@@ -38,45 +38,45 @@ const Footer = () => {
                     
                 </div>
                 <div className="flex flex-col gap-[5px]">
-                    <Link className="text-2xl cursor-pointer" href="/contactUs">Contact Us</Link>
-                    <p className="cursor-pointer"><FontAwesomeIcon className="pr-[5px]" icon={faEnvelope} />happypaws@gmail.com</p>
-                    <p className="cursor-pointer"><FontAwesomeIcon className="pr-[5px]" icon={faPhone} />(123) 456-7890</p>
+                    <Link className="text-2xl cursor-pointer ubuntu-regular" href="/contactUs">Contact Us</Link>
+                    <p className="palanquin-medium cursor-pointer"><FontAwesomeIcon className="pr-[5px]" icon={faEnvelope} />happypaws@gmail.com</p>
+                    <p className="palanquin-medium cursor-pointer"><FontAwesomeIcon className="pr-[5px]" icon={faPhone} />(123) 456-7890</p>
                     <div className="flex">
                         <div><FontAwesomeIcon className="pr-[5px]" icon={faLocationDot} /></div>
-                        <div>
+                        <div className="palanquin-medium">
                             <p>123 N Linden Street,</p>
                             <p>West Lafayette, IN, 47906</p>
                         </div>
                     </div>
                 </div>
                 <div className="">
-                    <h3 className="text-2xl">Socials</h3>
-                    <p className="cursor-pointer">Instagram</p>
-                    <p className="cursor-pointer">Facebook</p>
-                    <p className="cursor-pointer">LinkedIn</p>
-                    <p className="cursor-pointer">YouTube</p>
-                    <p className="cursor-pointer">X</p>
+                    <h3 className="text-2xl ubuntu-regular">Socials</h3>
+                    <p className="palanquin-medium cursor-pointer">Instagram</p>
+                    <p className="palanquin-medium cursor-pointer">Facebook</p>
+                    <p className="palanquin-medium cursor-pointer">LinkedIn</p>
+                    <p className="palanquin-medium cursor-pointer">YouTube</p>
+                    <p className="palanquin-medium cursor-pointer">X</p>
                     {status === "loading" ? (
-                    <span>Loading...</span>
+                    <span className="palanquin-regular">Loading...</span>
                     ) : session ? (
                     <>
                         <span className="">{session.user.email}</span>
                         <button
                         onClick={() => signOut({ callbackUrl: "/" })}
-                        className="cursor-pointer pl-[5px] underline"
+                        className="palanquin-regular cursor-pointer pl-[5px] underline"
                         >
                         Sign Out
                         </button>
                     </>
                     ) : (
-                    <Link href="/auth/signin" className="cursor-pointer">
+                    <Link href="/auth/signin" className="palanquin-regular cursor-pointer">
                         Owner Sign In
                     </Link>
                     )}
                 </div>
             </div>
             <div>
-                <p className="text-center text-sisal-100 pb-[20px]">Happy Paws Animal Shelter - All Rights Reserved</p>
+                <p className="palanquin-regular text-center text-sisal-100 pb-[20px]">Happy Paws Animal Shelter - All Rights Reserved</p>
             </div>
         </div>
     )

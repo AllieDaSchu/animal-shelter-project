@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Maitree:wght@200;300;400;500;600;700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,200;1,200&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -41,23 +41,128 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.raleway-400 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+.maitree-extralight {
+  font-family: "Maitree", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.maitree-light {
+  font-family: "Maitree", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.maitree-regular {
+  font-family: "Maitree", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.raleway-500 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+.maitree-medium {
+  font-family: "Maitree", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.maitree-semibold {
+  font-family: "Maitree", serif;
   font-weight: 600;
   font-style: normal;
 }
 
-.raleway-200 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+.maitree-bold {
+  font-family: "Maitree", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.palanquin-thin {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.palanquin-extralight {
+  font-family: "Palanquin", sans-serif;
   font-weight: 200;
+  font-style: normal;
+}
+
+.palanquin-light {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.palanquin-regular {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.palanquin-medium {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.palanquin-semibold {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.palanquin-bold {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
   font-style: normal;
 }

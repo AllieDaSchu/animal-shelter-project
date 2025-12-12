@@ -20,7 +20,7 @@ export default async function AnimalGrid({params}) {
 
     return (
          <div className="mt-[90px]">
-            <h1 className="w-[100%] text-center text-5xl raleway-500 my-[25px]">Animals Available</h1>
+            <h1 className="w-[100%] text-center text-5xl my-[25px] ubuntu-regular">Animals Available</h1>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-[10px] max-w-[1000px] m-auto px-[20px]">
                 {animalList.map((a) => (
                     
@@ -30,8 +30,8 @@ export default async function AnimalGrid({params}) {
                             <div className="absolute bottom-0 w-[100%] z-60 flex flex-col justify-end h-[100%]">
                                 <div className="w-[100%] rounded-b-[14px] justify-between items-center flex flex-row overflow-hidden py-[7px] px-[15px] bg-white">
                                     <div>
-                                        <p>{a.name}</p>
-                                        <p className="hidden sm:block">{a.type} - {a.gender}</p>
+                                        <p className="ubuntu-medium">{a.name}</p>
+                                        <p className="hidden sm:block palanquin-medium">{a.type} - {a.gender}</p>
                                     </div>
                                     <div className="pr-[5px] group-hover:pr-[0px] group-hover:shadow-black transition-all ease-out duration-300"><FontAwesomeIcon className="w-[25px] h-[25px]" icon={faArrowRight} /></div>
                                     
