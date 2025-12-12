@@ -5,6 +5,16 @@ import {faLocationDot} from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Home() {
+    const [submitted, setSubmitted] = useState(false)
+    
+        const handleSubmit = (e) => {
+            e.preventDefault()
+            setSubmitted(true)
+    
+            setTimeout(() => {
+                setSubmitted(false);
+            }, 5000)
+        }
   return (
     <div className="flex flex-col mb-[50px] md:flex-row max-w-[1100px] gap-[25px] m-auto mt-[100px] px-[25px] items-center">
         <div className="w-[100%] md:w-[50%] flex flex-col gap-[15px]">
@@ -15,7 +25,7 @@ export default function Home() {
             <div className="palanquin-medium flex flex-row items-center text-lg"><FontAwesomeIcon className="text-4xl text-driftwood-700" icon={faLocationDot} /><div className="pl-[15px]"><p>123 N Linden Street,</p><p>West Lafayette, IN, 47906</p></div></div>
         </div>
         <div className="palanquin-regular w-[100%] md:w-[50%] shadow-all-over rounded-[20px]">
-            <form className="p-[50px] flex flex-col gap-[15px]">
+            <form className="p-[50px] flex flex-col gap-[15px]" onSubmit={handleSubmit}>
                 <div className="flex gap-[25px]">
                     <div className="w-[50%]">
                         <label className="block pb-[5px]" htmlFor="firstName">First Name: </label>
@@ -39,6 +49,9 @@ export default function Home() {
                     <textarea className="py-[5px] px-[7px] w-[100%] h-[100px] rounded-[7px] border-1 border-neutral-300 bg-gray-200" name="message" id="message" placeholder="Add Message" required />
                 </div>
                 <button type="submit" id="submit" className="palanquin-medium w-[100%] bg-driftwood-500 rounded-full py-[3px] text-sisal-50 hover:bg-driftwood-700 transition-bg duration-200 ease-in-out cursor-pointer">Send Message</button>
+                {submitted && (
+                    <p className="palanquin-medium text-center">Interest message has been sent!</p>
+                )}
             </form>
         </div>
     </div>
