@@ -1,19 +1,44 @@
 export const dynamic = "force-dynamic";
 
 import Link from 'next/link'
-import Image from "next/image";
+import Search from "@/components/Search.jsx"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import {PrismaClient} from '@prisma/client'
 const prisma = new PrismaClient()
 
-export default async function AnimalGrid({params}) {
+export default async function AnimalGrid({params, searchParams}) {
     const {animals} = await params
+    const {search = "", gender= "", age="", size=""} = await searchParams
 
     const animalList = await prisma.animals.findMany({
-        where: { type: animals },
+        where: { 
+            type: animals,
+            name: search ? { contains: search, mode: "insensitive" } : undefined,
+        },
         orderBy: { id: 'asc' }
     });
+
+    const allGenders = await prisma.animals.findMany({
+        distinct: ['gender'],
+        select: { gender: true },
+        orderBy: { gender: "asc" },
+    });
+
+    const allAges = await prisma.animals.findMany({
+        distinct: ['age'],
+        select: { age: true },
+        orderBy: { age: "asc" },
+    });
+    const allSizes = await prisma.animals.findMany({
+        distinct: ['size'],
+        select: { size: true },
+        orderBy: { size: "asc" },
+    });
+
+    const genders = allGenders.map((g) => g.gender)
+    const ages = allAges.map((a) => a.age);
+    const sizes = allSizes.map((s) => s.size)
 
     //const header = animal.length > 0 ? animal[0].type : animals;
     //const fixedHeader = header[0].toUpperCase() + header.substring(1) + "s"
@@ -21,6 +46,7 @@ export default async function AnimalGrid({params}) {
     return (
          <div className="mt-[90px]">
             <h1 className="w-[100%] text-center text-5xl my-[25px] ubuntu-regular">Animals Available</h1>
+            {/* <Search search={search} gender={gender} age={age} size={size} genders={genders} ages={ages} sizes={sizes} /> */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-[10px] max-w-[1000px] m-auto px-[20px]">
                 {animalList.map((a) => (
                     

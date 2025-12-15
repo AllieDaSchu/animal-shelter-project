@@ -13,15 +13,20 @@ export default function Home() {
       <div id="banner" className="flex shadow-inset justify-center items-center h-[500px] before:content-[''] before:bg-black before:w-[100%] before:h-[500px] before:opacity-45 before:absolute bg-cover bg-center" style={{backgroundImage: 'url(../images/animal-shelter-banner.jpg)'}}>
         <div className="text-center text-sisal-100 z-900 mt-[70px] px-[10px] text-shadow-lg">
           <h1 className="text-6xl pb-[20px] maitree-medium">Happy Paws Animal Shelter</h1>
-          <h2 className="text-3xl pb-[15px] ubuntu-regular">Where animals find their fur-ever home</h2>
+          <h2 className="text-3xl pb-[15px] ubuntu-regular">An Animal Shelter Web Project</h2>
           <Link className="" href="/animals"><button className="palanquin-regular inline-flex text-lg items-center justify-center bg-driftwood-500 rounded-full pb-[5px] pt-[2px] px-[15px] hover:scale-105 hover:bg-driftwood-700 transform-gpu transition-all duration-200 ease-in-out cursor-pointer">See Availability</button></Link>
         </div>
       </div>
       <div className="flex flex-col md:flex-row gap-[25px] max-w-[1200px] m-auto my-[40px] px-[25px] items-center">
         <div className="w-[100%] md:w-[60%] flex justify-center flex-col">
-          <h2 className="text-4xl mb-[15px] ubuntu-regular">About Us</h2>
-          <p className="text-lg palanquin-regular">
-            Happy Paws is an animal shelter that helps both cats and dogs in need. Our mission is to provide compassionate care, safe shelter, and medical support to animals in need while working tirelessly to place them in loving, permanent homes. We are committed to reducing pet overpopulation through spay/neuter initiatives, educating the community on responsible pet ownership, and fostering a culture of kindness and respect for all living beings. By building strong partnerships and engaging volunteers, we strive to create a world where every animal is valued and protected.
+          <h2 className="text-4xl mb-[15px] ubuntu-regular">About The Project</h2>
+          <p className="text-md palanquin-regular">
+            This project showcases my skills in Next.js, React, and JavaScript through the development of a comprehensive animal 
+            shelter website. The site is designed to make the adoption process more accessible by allowing visitors to easily browse 
+            available animals and learn more about them. In addition, the Owner login feature empowers shelter staff to efficiently 
+            manage listings by adding, editing, or removing animals as needed so that information remains accurate and up to date. 
+            Ultimately, the project aims to bridge the gap between shelters and potential adopters, creating a user-friendly platform 
+            that supports both community engagement and responsible pet adoption.
           </p>
         </div>
         <div className="w-[100%] justify-center md:w-[40%]">
